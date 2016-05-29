@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layout onLaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" onResume="resume" onPause="pause" lightcolor="#e77300" darkcolor="#c46e19">
+  <grid>
+    <row>
+    <label id="title" text="Connecting..." />
+    </row>
+    <row>
+      <button icon="rwd" onTap="jump_back" />
+      <button icon="refresh" onTap="current_repeat" />
+      <button icon="ff" onTap="jump_forward" />
+    </row>
+    <row>
+      <button icon="repeat" onTap="loop_repeat" />
+      <button icon="stop" onTap="stop" />
+      <button icon="shuffle" onTap="shuffle" />
+    </row>
+    <row>
+      <button text="Start" onTap="start_cmus" color="green" />
+      <button text="Stop" onTap="stop_cmus" color="red" />
+    </row>
+    <row>
+      <button icon="vdown" onTap="volume_down" />
+      <button icon="vmute" onTap="volume_mute" />
+      <button icon="vup" onTap="volume_up" />
+    </row>
+    <row>
+      <button icon="previous" onTap="previous" />
+      <button icon="playpause" onTap="play_pause" />
+      <button icon="next" onTap="next" />
+    </row>
+  </grid>
+</layout>
