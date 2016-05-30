@@ -1,3 +1,4 @@
+local kb = require("keyboard");
 local mutedvol = 0;
 
 function updateInfo()
@@ -28,6 +29,16 @@ actions.play_pause = function ()
 		pout,perr,presult = libs.script.shell(cmd);
 	end);
 	updateInfo();
+end
+
+--@help Lower system volume
+actions.volume_down = function()
+	kb.press("volumedown");
+end
+
+--@help Raise system volume
+actions.volume_up = function()
+	kb.press("volumeup");
 end
 
 --@help Raise volume
